@@ -1,0 +1,6 @@
+server:
+  port: 8889
+
+turbine:
+  appConfig: product,recommend
+  clusterNameExpression: new String("default")
