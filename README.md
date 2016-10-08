@@ -14,6 +14,9 @@
 
 ####组件介绍
 ####Eureka
+Spring Cloud Eureka 模块提供的功能是被动式的服务发现.
+目前服务发现的解决方案有Eureka,Consul,Etcd,Zookeeper,SmartStack,等等.
+Eureka Client通过HTTP(或者TCP,UDP)去Eureka Server注册和获取服务列表,为了高可用一般会有多个Eureka Server组成集群.Eureka会移除那些心跳检查未到达的服务.
 Eureka由两个组件组成：Eureka服务器和Eureka客户端。Eureka服务器用作服务注册服务器。Eureka客户端是一个java客户端，用来简化与服务器的交互、作为轮询负载均衡器，并提供服务的故障切换支持。Netflix在其生产环境中使用的是另外的客户端，它提供基于流量、资源利用率以及出错状态的加权负载均衡。
 
 当一个中间层服务首次启动时，他会将自己注册到Eureka中，以便让客户端找到它，同时每30秒发送一次心跳。如果一个服务在几分钟内没有发送心跳，它将从所有Eureka节点上注销。Eureka使用Servo进行性能监控和告警。

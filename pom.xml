@@ -33,6 +33,8 @@
 
     <modules>
         <module>eureka-server</module>
+        <module>eureka-test-server</module>
+        <module>eureka-test-client</module>
         <module>config</module>
         <module>config-test</module>
         <module>config-client-test</module>

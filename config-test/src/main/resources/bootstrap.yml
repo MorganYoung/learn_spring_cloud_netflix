@@ -1,6 +1,6 @@
 spring:
   application:
-    name: config
+    name: config-test
 
 eureka:
   instance:

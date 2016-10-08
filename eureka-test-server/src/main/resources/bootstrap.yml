@@ -1,6 +1,6 @@
 spring:
   application:
-    name: discovery22
+    name: eureka-test1
   cloud:
     config:
       profile: dev
