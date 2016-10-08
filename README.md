@@ -125,3 +125,4 @@ Why Ribbon need Eureka？
 * [Ribbon 和 Eureka 的集成](http://blog.csdn.net/defonds/article/details/38016301)
 * [ 云中间层服务 - 区域感知负载均衡器 Ribbon](http://blog.csdn.net/defonds/article/details/32729155)
 * [ Eureka 的 Application Client 客户端的运行示例](http://blog.csdn.net/defonds/article/details/37652111)
+* [使用Spring Cloud构建统一配置中心](http://www.jianshu.com/p/69dea19abf04)
