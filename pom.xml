@@ -34,6 +34,7 @@
     <modules>
         <module>eureka-server</module>
         <module>config</module>
+        <module>config-test</module>
         <module>feign</module>
         <module>api-gateway</module>
         <module>hystrix</module>

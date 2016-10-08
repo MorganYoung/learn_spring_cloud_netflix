@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: config
+  profiles:
+    active: native
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8762/eureka/
