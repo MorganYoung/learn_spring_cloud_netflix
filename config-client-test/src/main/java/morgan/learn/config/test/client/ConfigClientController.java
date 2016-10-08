@@ -11,14 +11,13 @@ import org.springframework.web.bind.annotation.RestController;
  * Created by morgan on 16/10/8.
  */
 @RestController
-@RefreshScope
 public class ConfigClientController {
 
-    @Value("${morgan.learn.valueName}")
+    @Value("${morgan.learn.cfg}")
     String value;
 
     @Autowired
-    private MorganLearn morganLearn;
+    MorganLearn morganLearn;
 
     @RequestMapping("/test")
     public MorganLearn test() {
@@ -27,6 +26,6 @@ public class ConfigClientController {
 
     @RequestMapping("/test2")
     public String test2() {
-        return value;
+        return "valueis : " + value;
     }
 }

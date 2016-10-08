@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: client1
+  cloud:
+    config:
+      profile: dev
+      uri: http://localhost:8886/
+      name: test-cfg1
