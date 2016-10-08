@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
  * Created by morgan on 16/10/8.
  */
 @RestController
+@RefreshScope
 public class ConfigClientController {
 
     @Value("${morgan.learn.cfg}")
