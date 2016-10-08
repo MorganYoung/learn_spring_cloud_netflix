@@ -3,7 +3,8 @@ spring:
     config:
       server:
         git:
-          uri:
+          uri: https://github.com/MorganYoung/learn_spring_cloud_netflix.git
+          searchPaths: config-test/config-repo
       uri: http://localhost:8886
 server:
   port: 8886

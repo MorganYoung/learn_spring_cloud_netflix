@@ -1,0 +1,6 @@
+morgan:
+  learn:
+    cfg: 123
+    url: https://github.com/MorganYoung
+    ver: 1.0
+    valueName: somevaluename
