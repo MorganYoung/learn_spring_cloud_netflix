@@ -1,8 +1,8 @@
 spring:
   application:
-    name: eureka-client-test1
+    name: eureka-client-test2
   cloud:
     config:
-      profile: dev
+      profile: wordsen
       uri: http://localhost:8886/
       name: test-cfg2

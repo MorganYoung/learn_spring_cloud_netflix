@@ -3,9 +3,10 @@ server:
 
 eureka:
   instance:
+    instanceId: ${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${random.value}}
     preferIpAddress: true
   client:
     serviceUrl:
       defaultZone: http://localhost:8010/eureka/
 
-words: 你好,我好,大家好
+#words: 你好,我好,大家好

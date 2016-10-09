@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: eureka-client-test1
+  cloud:
+    config:
+      profile: wordscn
+      uri: http://localhost:8886/
+      name: test-cfg2

@@ -7,7 +7,7 @@
 * eureka做服务发现
 * config做分布式配置 sping cloud config
 * zuul做api-gateway
-* feign做客户端负载均衡
+* feign做客户端负载均衡 ribbon
 * hystrix做断路器
 * turbine做聚合的monitor
 * graphite做指标监控
