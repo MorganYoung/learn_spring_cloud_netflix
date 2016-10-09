@@ -23,14 +23,20 @@ public class Controller {
 
     @RequestMapping("/sentence")
     String sentence() {
-        return getWord("eureka-client-test1") + " , " + getWord("EUREKA-CLIENT-TEST1") ;
+        return getWord("eureka-client-test") + " , " + getWord("EUREKA-CLIENT-TEST") ;
+    }
+
+    @RequestMapping("/sentencelb")
+    String sentencelb() {
+        return getWordFromLB("eureka-client-test") + "," + getWordFromLB("eureka-client-test");
     }
 
     @Autowired
     LoadBalancerClient loadBalancerClient;
 
-    public String getWordFromLB() {
-        return null;
+    public String getWordFromLB(String service) {
+        ServiceInstance choose = loadBalancerClient.choose(service);
+        return new RestTemplate().getForObject(choose.getUri(), String.class);
     }
 
     public String getWord(String service) {

@@ -13,8 +13,8 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 @EnableDiscoveryClient
 public class EurekaClientTestApplication {
     public static void main(String[] args) {
-//        System.setProperty("spring.profile.active","wordscn");
-        System.setProperty("spring.profiles.active","wordscn");
+        System.setProperty("spring.profiles.active","wordsen");
+//        System.setProperty("spring.profiles.active","wordscn");
         SpringApplication.run(EurekaClientTestApplication.class, args);
     }
 }
