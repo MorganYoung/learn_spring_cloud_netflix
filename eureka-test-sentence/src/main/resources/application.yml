@@ -1,0 +1,9 @@
+server:
+  port: 8020
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8010/eureka/

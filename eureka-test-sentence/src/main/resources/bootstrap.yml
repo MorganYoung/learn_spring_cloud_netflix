@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: eureka-test-sentence
+  cloud:
+    config:
+      profile: dev
+      uri: http://localhost:8886/
+      name: test-cfg2
