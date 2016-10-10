@@ -34,9 +34,20 @@ public class Controller {
     @Autowired
     LoadBalancerClient loadBalancerClient;
 
+    @Autowired
+    FeignClient feignClient;
+
+    @RequestMapping("/senfeign")
+    String senfeign() {
+        return feignClient.getWords1() + "," + feignClient.getWords2();
+    }
+
     public String getWordFromLB(String service) {
         ServiceInstance choose = loadBalancerClient.choose(service);
-        return new RestTemplate().getForObject(choose.getUri(), String.class);
+
+        RestTemplate restTemplate = new RestTemplate();
+        return restTemplate.getForObject(choose.getUri().toString()+"getwords1", String.class);
+//        return new RestTemplate().getForObject(choose.getUri(), String.class);
     }
 
     public String getWord(String service) {

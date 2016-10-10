@@ -36,4 +36,13 @@ public class MorganLearn {
     public void setVer(String ver) {
         this.ver = ver;
     }
+
+    @Override
+    public String toString() {
+        return "MorganLearn{" +
+                "cfg='" + cfg + '\'' +
+                ", url='" + url + '\'' +
+                ", ver='" + ver + '\'' +
+                '}';
+    }
 }

@@ -3,8 +3,14 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/MorganYoung/learn_spring_cloud_netflix.git
-          searchPaths: config-repo
+          #uri: https://github.com/MorganYoung/learn_spring_cloud_netflix.git
+          uri: https://git.oschina.net/morganyoung/spring-config-repo
+          #searchPaths: config-repo
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: user_config
+    password: passwd_config
 
 server:
   port: 8886

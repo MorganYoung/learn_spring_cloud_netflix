@@ -16,7 +16,21 @@ public class Controller {
     String words;
 
     @RequestMapping("/")
+    String getWords1() {
+        String[] wordArray = words.split(",");
+        int i = (int)Math.round(Math.random() * (wordArray.length - 1));
+        return wordArray[i];
+    }
+
+    @RequestMapping("/getwords1")
     String getWords() {
+        String[] wordArray = words.split(",");
+        int i = (int)Math.round(Math.random() * (wordArray.length - 1));
+        return wordArray[i];
+    }
+
+    @RequestMapping("/getwords2")
+    String getWords2() {
         String[] wordArray = words.split(",");
         int i = (int)Math.round(Math.random() * (wordArray.length - 1));
         return wordArray[i];
